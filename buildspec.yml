@@ -1,12 +1,21 @@
 version: 0.2
 
 phases:
-  pre_build:
+  install:
+    runtime-versions:
+      nodejs: 18
     commands:
-      - npm install
+      - echo "Installing dependencies using node 18"
+      - npm ci
+      - echo "Done installing dependencies ====>"
   build:
     commands:
+      - echo "Building the React Project"
       - npm run build
-  post_build:
-    commands:
-      - aws s3 cp --recursive ./build s3://daily-horoscope-project-qgarcia/
+      - echo "Done building the project ==> Exporting artifcats"
+
+artifacts:
+  files:
+    - "**/*"
+  discard-paths: no
+  base-directory: dist
