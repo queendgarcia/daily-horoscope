@@ -2,7 +2,7 @@ export const horoscopeData = [
   {
     zodiacSign : "ARIES",
     dates: "March 21 - April 20",
-    reading : " You should wake up feeling strong and confident, Aries. Expect to receive some good news today, which will only heighten your mood. In the afternoon you could attend a party or neighborhood get-together."
+    reading : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
   },
   {
     zodiacSign : "TAURUS",
